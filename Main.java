@@ -20,5 +20,7 @@ public class Main {
         double d = 2002L;
         System.out.println(d);
 
+        System.out.println("the int value is : " + apple);
+
     }
 }
