@@ -20,36 +20,48 @@ public class Practice {
         int angle2 = input.nextInt();
         System.out.println("Enter third angle");
         int angle3 = input.nextInt();
-        if (angle1 + angle2 + angle3 == 180 && ( angle1 > 0 && angle2 > 0 && angle3> 0)) {
+        if (angle1 + angle2 + angle3 == 180 && (angle1 > 0 && angle2 > 0 && angle3 > 0)) {
             System.out.println("Valid Triangle");
         } else {
             System.out.println("Invalid Triangle");
         }
 
-
         // 3. Leap Year
         System.out.println("Enter the year.");
         int year = input.nextInt();
-        if ( year % 100 == 0){
-            if ( year % 400 == 0 ){
+        if (year % 100 == 0) {
+            if (year % 400 == 0) {
                 System.out.println("Leap Year");
             } else {
                 System.out.println("Not Leap Year");
             }
         } else {
-            if ( year % 4 == 0 ){
+            if (year % 4 == 0) {
                 System.out.println("Leap Year");
             } else {
-                 System.out.println("Not Leap Year");
+                System.out.println("Not Leap Year");
             }
         }
-         
 
+        // In optimize way:
+        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+            System.out.println("Leap Year");
+        } else {
+            System.out.println("Not Leap Year");
+        }
 
-        
+        // 4. Max of three:
+        int a = input.nextInt();
+        int b = input.nextInt();
+        int c = input.nextInt();
 
-
-
+        if (a > b && a > c) {
+            System.out.println(a + " is greatest.");
+        } else if (b > c) {
+            System.out.println(b + " is greatest.");
+        } else {
+            System.out.println(c + " is greatest.");
+        }
 
         input.close();
     }
