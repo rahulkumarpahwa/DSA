@@ -21,6 +21,12 @@ public class ControlStatements {
             j++;
         } while (j <= 10);
 
+        // run at least once:
+        int m = 10;
+        do {
+            System.out.println("hello");
+        } while (m <= 9);
+
         // practice question :
         // sum of n natural number:
         int sum = 0, n = 1000;
@@ -35,8 +41,25 @@ public class ControlStatements {
         while (n1 != 0) {
             rem = n1 % 10;
             rev = (rev * 10) + rem;
-            n1 = n1 /  10;
+            n1 = n1 / 10;
         }
         System.out.println("reverse is " + rev);
+
+        // prime no.:
+        int number = 9;
+        boolean prime = false;
+
+        for (int n2 = 2; n2 <= number / 2; i++) {
+            if (number % n2 == 0) {
+                prime = true;
+                break;
+            }
+        }
+        if (prime) { // extra condition will be to check number must be greater than one.
+            System.out.println("Prime Number");
+        } else {
+            System.out.println("Not Prime");
+        }
+
     }
 }
