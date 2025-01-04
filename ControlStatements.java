@@ -27,6 +27,14 @@ public class ControlStatements {
             System.out.println("hello");
         } while (m <= 9);
 
+        // continue keyword:
+        for (int d = 1; d <= 10; d++) {
+            if (d > 4 && d < 9) {
+                continue;
+            }
+            System.out.println(d);
+        }
+
         // practice question :
         // sum of n natural number:
         int sum = 0, n = 1000;
@@ -60,6 +68,5 @@ public class ControlStatements {
         } else {
             System.out.println("Not Prime");
         }
-
     }
 }
