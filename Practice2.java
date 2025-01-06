@@ -11,7 +11,7 @@ public class Practice2 {
             first = second;
             second = third;
         }
-        // System.out.println(fiboLatest);
+        System.out.println(fiboLatest);
 
         // what will be output of code below?
         int i = 1, j = 1;
