@@ -63,7 +63,29 @@ public class Practice {
             System.out.println(c + " is greatest.");
         }
 
-        //5. 
+        // 5. Given three sides of the triangle and check that it is equilateral,
+        // isosceles or scalene.
+
+        int side1 = input.nextInt();
+        int side2 = input.nextInt();
+        int side3 = input.nextInt();
+
+        if (side1 > 0 || side2 > 0 || side3 > 0) {
+
+            if (side1 == side2 && side2 == side3 && side3 == side1) {
+                System.out.println("It is Equilateral Triangle.");
+            } else if (side1 != side2 && side2 != side3 && side3 != side1) {
+                System.out.println("It is Scalene Triangle.");
+            } else if (side1 == side2 || side2 == side3 || side1 == side3) {
+                System.out.println("It is Isosceles Triangle.");
+            }
+
+        } else {
+            System.out.println("The Sides must be greater than 0.");
+        }
+
+        // 6. consonant or vowel of the given alphabet.
+        // 7. day based on the week no. given. between 1 to 7.
 
         input.close();
     }
