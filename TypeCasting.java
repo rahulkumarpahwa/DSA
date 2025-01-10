@@ -62,10 +62,10 @@ public class TypeCasting {
 
         // Practice Question 2:
         System.out.println(10 + 20 + "Hello" + 10 + 20);
-        System.out.println(2 + ' ' + 5);
-        System.out.println(2 + " " + 5);
+        System.out.println(2 + ' ' + 5); // ' ' is 32 in unicode value.
+        System.out.println(2 + " " + 5); //  " " is a space and string, which just get concatenated.
         System.out.println("Hello" + '\t' + "World");
-        System.out.println(2 + '\t' + 3);
+        System.out.println(2 + '\t' + 3); // '\t' is the tab
 
     }
 }

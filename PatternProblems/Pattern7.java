@@ -16,7 +16,8 @@ public class Pattern7 {
                 System.out.print(" ");
             }
             // stars
-            int sstars = stars;
+            int sstars = stars; // we wrote this condition so because we have to make that the stars which are
+                                // print second time must print less by one when we reach the half.
             if (row == trows / 2 + 1) {
                 sstars = stars - 1;
             }
