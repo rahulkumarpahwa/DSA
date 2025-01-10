@@ -86,8 +86,18 @@ public class Practice {
         }
 
         // 6. check that the given alphabet is consonant or vowel.
-
-        
+        System.out.println("Enter the character to check it is vowel or consonant.");
+        char ch = input.next().toLowerCase().charAt(0);
+        System.out.println(ch);
+        if (ch >= 'a' && ch <= 'z') {
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                System.out.println("The Given Character is Vowel.");
+            } else {
+                System.out.println("The Given Character is Consonant.");
+            }
+        } else {
+            System.out.println("Error! enter a valid Character.");
+        }
 
         // 7. day based on the week no. given. between 1 to 7.
         System.out.println("Enter the day of the Week:");
