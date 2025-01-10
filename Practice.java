@@ -51,6 +51,7 @@ public class Practice {
         }
 
         // 4. Max of three:
+        System.out.println("Enter Three Numbers to find the greatest.");
         int a = input.nextInt();
         int b = input.nextInt();
         int c = input.nextInt();
@@ -65,14 +66,14 @@ public class Practice {
 
         // 5. Given three sides of the triangle and check that it is equilateral,
         // isosceles or scalene.
-
+        System.out.println("Enter The Values of the three sides of the Triangle.");
         int side1 = input.nextInt();
         int side2 = input.nextInt();
         int side3 = input.nextInt();
 
         if (side1 > 0 || side2 > 0 || side3 > 0) {
 
-            if (side1 == side2 && side2 == side3 && side3 == side1) {
+            if (side1 == side2 && side2 == side3) {
                 System.out.println("It is Equilateral Triangle.");
             } else if (side1 != side2 && side2 != side3 && side3 != side1) {
                 System.out.println("It is Scalene Triangle.");
@@ -84,8 +85,47 @@ public class Practice {
             System.out.println("The Sides must be greater than 0.");
         }
 
-        // 6. consonant or vowel of the given alphabet.
+        // 6. check that the given alphabet is consonant or vowel.
+
+        
+
         // 7. day based on the week no. given. between 1 to 7.
+        System.out.println("Enter the day of the Week:");
+        int day = input.nextInt();
+        switch (day) {
+            case 1: {
+                System.out.println("Monday");
+                break;
+            }
+            case 2: {
+                System.out.println("Tuesday");
+                break;
+            }
+            case 3: {
+                System.out.println("Wednesday");
+                break;
+            }
+            case 4: {
+                System.out.println("Thursday");
+                break;
+            }
+            case 5: {
+                System.out.println("Friday");
+                break;
+            }
+            case 6: {
+                System.out.println("Saturday");
+                break;
+            }
+            case 7: {
+                System.out.println("Sunday");
+                break;
+            }
+
+            default:
+                System.out.println("Invalid Day Value Entered.");
+                break;
+        }
 
         input.close();
     }
