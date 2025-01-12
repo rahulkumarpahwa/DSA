@@ -49,6 +49,13 @@ public class array {
         swap(arr, i, j);
         System.out.println(arr[i] + ", " + arr[j]);
 
+        // case 4:
+        System.out.println("----case 4-----"); // nothing happens
+        int[] other = { 400, 200, 300 };
+        System.out.println(arr[0] + ", " + other[0]);
+        swap(arr, other);
+        System.out.println(arr[0] + ", " + other[0]);
+
     }
 
     public static void swap(int one, int two) {
@@ -63,5 +70,12 @@ public class array {
         int temp = a[i];
         a[i] = a[j];
         a[j] = temp;
+    }
+
+    public static void swap(int[] a, int[] b) {
+        // nothing happens
+        int[] temp = a;
+        a = b;
+        b = temp;
     }
 }
