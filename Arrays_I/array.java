@@ -73,7 +73,9 @@ public class array {
     }
 
     public static void swap(int[] a, int[] b) {
-        // nothing happens
+        // nothing happens: because the changes made in the function does not reflect
+        // back to the array, where fxn call is made and only reference are passed.
+        // just.
         int[] temp = a;
         a = b;
         b = temp;
