@@ -10,7 +10,7 @@ public class RotateImage {
             }
             System.out.println();
         }
-        reverseArray(a);
+        rotateImage(a);
         // print matrix
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[0].length; j++) {
@@ -20,7 +20,7 @@ public class RotateImage {
         }
     }
 
-    public static void reverseArray(int[][] a) {
+    public static void rotateImage(int[][] a) {
         // reverse column:
         for (int j = 0; j < a[0].length; j++) {
             int start = 0;
