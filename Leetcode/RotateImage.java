@@ -36,7 +36,8 @@ public class RotateImage {
 
         // transpose matrix:
         for (int i = 0; i < a.length; i++) {
-            for (int j = i+1; j < a[0].length; j++) { // i+1 is necessary.
+            for (int j = i + 1; j < a[0].length; j++) { // i+1 is necessary so as to make the diagonal values need not
+                                                        // to be repeat again.
                 int temp = a[i][j];
                 a[i][j] = a[j][i];
                 a[j][i] = temp;
