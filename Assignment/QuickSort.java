@@ -33,7 +33,7 @@ public class QuickSort {
         int temp;
 
         do {
-            while (i <= high && a[i] <= pivot) {
+            while (a[i] <= pivot) {
                 i++;
             }
             while (a[j] > pivot) {
