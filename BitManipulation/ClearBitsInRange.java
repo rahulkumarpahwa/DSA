@@ -9,6 +9,6 @@ public class ClearBitsInRange {
     }
 
     public static void main(String[] args) {
-        System.out.println(ClearBitsInR(10, 2, 4)); // n = 10, i =2, j=4
+        System.out.println(ClearBitsInR(10, 2, 4)); // n = 10, i =2, j=4 // output is 2
     }
 }
