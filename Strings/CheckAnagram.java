@@ -8,7 +8,7 @@ public class CheckAnagram {
         str1 = str1.toLowerCase();
         str2 = str2.toLowerCase();
         if (str1.length() == str2.length()) {
-            char str1Array[] = str1.toCharArray();  
+            char str1Array[] = str1.toCharArray();
             char str2Array[] = str2.toCharArray();
 
             Arrays.sort(str1Array);
@@ -29,3 +29,13 @@ public class CheckAnagram {
         sc.close();
     }
 }
+
+/*
+ * Approach :
+ * 1. convert the strings to the lower case.
+ * 2. check the length of the strings is equal or not.
+ * 3. then if true then convert the string to the array of char.
+ * 4. sort the arrays with Arrays class.
+ * 5. use equals method to check that they are equal or not with the Arrays
+ * class and return the result.
+ */
