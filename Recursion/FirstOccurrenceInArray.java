@@ -4,7 +4,7 @@ public class FirstOccurrenceInArray {
 
     public static int firstOccurrence(int arr[], int start, int key) {
         // base condition
-        if (start == arr.length - 1) {
+        if (start == arr.length) {
             return -1;// -1 means key not found.
         }
 
