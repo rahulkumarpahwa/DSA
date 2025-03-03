@@ -1,4 +1,4 @@
-package OOPS;
+package OOPs;
 
 class BankAccount {
     public String username;

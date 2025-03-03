@@ -1,4 +1,4 @@
-package OOPS;
+package OOPs;
 
 public class ShallowCopy {
     public static void main(String[] args) {

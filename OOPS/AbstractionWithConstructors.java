@@ -1,4 +1,4 @@
-package OOPS;
+package OOPs;
 
 public class AbstractionWithConstructors {
     public static void main(String[] args) {

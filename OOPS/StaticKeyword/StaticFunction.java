@@ -15,14 +15,14 @@ public class StaticFunction {
 class Student {
     String name;
     int roll;
-    int percentage;
+    double percentage;
 
-    void display() { // this keyword can't be used in the static functions
+    void display() { // this keyword can't be used in the static functions. so don't make static when you have to use "this" keyword.
         System.out.println(this.percentage);
     }
 
-    static int findPercentage(int phy, int chem, int maths) { // this will remain same for all the student objects.
-        return ((phy + chem + maths) / 3);
+    static double findPercentage(int phy, int chem, int maths) { // this will remain same for all the student objects.
+        return ((phy + chem + maths) / 3.0);
     }
 
 }

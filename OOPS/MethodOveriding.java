@@ -1,4 +1,4 @@
-package OOPS;
+package OOPs;
 
 public class MethodOveriding {
     public static void main(String[] args) {

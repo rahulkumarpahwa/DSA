@@ -1,4 +1,4 @@
-package OOPS.Inheritance;
+package OOPs.Inheritance;
 
 public class SingleLvlInheritance {
     public static void main(String[] args) {
