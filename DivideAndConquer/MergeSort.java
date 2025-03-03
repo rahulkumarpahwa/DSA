@@ -1,5 +1,3 @@
-package DivideAndConquer;
-
 public class MergeSort {
 
     public static void Merge(int arr[], int si, int mid, int ei) {
@@ -35,7 +33,7 @@ public class MergeSort {
         }
         // or in simplified form we can write as :
         // for (int l = si; l <= ei; l++) {
-        //     arr[l] = b[l];
+        // arr[l] = b[l];
         // }
     }
 
