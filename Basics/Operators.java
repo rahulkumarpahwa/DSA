@@ -38,7 +38,7 @@ public class Operators {
 
         // 4. Logical Operator:
         System.out.println((5 > 3) && (8 > 5));
-        System.out.println((5 > 3) || (8 > 5));
+        System.out.println(5 > 3);
         System.out.println(!(5 == 3));
 
         // 5. Unary Operator:
@@ -52,8 +52,8 @@ public class Operators {
         System.out.println(res2);
 
         // 6. ternary operator:
-        String result = 75 > 70 ? "75 is greater." : "70 is greater.";
-        System.out.println(result);
+        // String result = 75 > 70 ? "75 is greater." : "70 is greater.";
+        // System.out.println(result);
 
     }
 }

@@ -1,4 +1,5 @@
 package Basics;
+
 public class TypeCasting {
     public static void main(String[] args) {
 
@@ -7,6 +8,9 @@ public class TypeCasting {
         short sh = 10;
         int in = 10;
         long lo = 10;
+
+        System.out.println(sh);
+        System.out.println(lo);
 
         // case 1:
         // by = sh; // not possible.
@@ -33,6 +37,8 @@ public class TypeCasting {
 
         // case 4:
         in = (int) f; // explicit conversion.
+
+        System.out.println(d);
 
         // byte b = 130; // can be possible as byte has a range of -128 to 127. so we
         // will do explicit typecasting.
@@ -64,7 +70,7 @@ public class TypeCasting {
         // Practice Question 2:
         System.out.println(10 + 20 + "Hello" + 10 + 20);
         System.out.println(2 + ' ' + 5); // ' ' is 32 in unicode value.
-        System.out.println(2 + " " + 5); //  " " is a space and string, which just get concatenated.
+        System.out.println(2 + " " + 5); // " " is a space and string, which just get concatenated.
         System.out.println("Hello" + '\t' + "World");
         System.out.println(2 + '\t' + 3); // '\t' is the tab
 
