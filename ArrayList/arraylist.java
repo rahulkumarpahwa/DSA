@@ -6,8 +6,8 @@ public class arraylist {
     public static void main(String[] args) {
 
         // syntax: ArrayList <type> arrayListName = new ArrayList<>();
-        ArrayList<Integer> arrayList = new ArrayList<>();
-        ArrayList<Double> arrayList1 = new ArrayList<>(); // wrapper classes : Double and Integer.
+        // ArrayList<Integer> arrayList = new ArrayList<>();
+        // ArrayList<Double> arrayList1 = new ArrayList<>(); // wrapper classes : Double and Integer.
 
         ArrayList<String> languages = new ArrayList<>();
 

@@ -1,4 +1,7 @@
 package Assignment;
+// finding the kth largest element. 
+
+// order of understanding : 1st largest element is the largest element of all and kth largest element id smaller than it.
 
 public class SelectionProblem {
 
@@ -12,7 +15,12 @@ public class SelectionProblem {
 
     public static int kthLargestElement(int[] a, int kth) {
         int val = -1;
-         
+        int i = 0;
+        int j = a.length - 1;
+        if (i < j){
+
+        }
+            
 
         return val;
     }

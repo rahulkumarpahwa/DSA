@@ -1,0 +1,10 @@
+1. create an array boolean of visited and set all the values to zero.
+2. create an another array to store the weights of the vertices.
+3. create another array to store Parent of each vertices.
+4. for ( u : V ) // u := each vertex and V:= Total vertices
+     a = Min( Weight[]); // a is index
+     visited[a] = true;
+    for -> Travel each neighbor vertex of the a and check the weights of the neighbors from is less or not.
+     if yes, then set the weights of the neighbors and set the Parent also to the a.
+    end. 
+5. end.

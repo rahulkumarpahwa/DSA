@@ -4,8 +4,6 @@ package Leetcode;
 
 import java.util.ArrayList;
 
-import ArrayList.arraylist;
-
 public class twoSum {
 
     public static void main(String[] args) {
