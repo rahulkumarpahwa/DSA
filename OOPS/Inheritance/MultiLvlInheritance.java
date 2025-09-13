@@ -1,4 +1,4 @@
-package OOPs.Inheritance;
+package OOPS.Inheritance;
 
 public class MultiLvlInheritance {
     public static void main(String[] args) {

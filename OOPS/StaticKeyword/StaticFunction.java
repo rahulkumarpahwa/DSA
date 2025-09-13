@@ -1,4 +1,4 @@
-package OOPs.StaticKeyword;
+package OOPS.StaticKeyword;
 
 public class StaticFunction {
 

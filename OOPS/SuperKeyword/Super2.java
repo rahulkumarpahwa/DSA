@@ -1,4 +1,4 @@
-package OOPs.SuperKeyword;
+package OOPS.SuperKeyword;
 
 public class Super2 {
     public static void main(String[] args) {

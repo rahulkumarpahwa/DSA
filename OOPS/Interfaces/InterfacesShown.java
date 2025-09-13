@@ -1,4 +1,4 @@
-package OOPs.Interfaces;
+package OOPS.Interfaces;
 
 interface chessPlayer {
     void moves();

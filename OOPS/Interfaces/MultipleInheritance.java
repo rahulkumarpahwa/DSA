@@ -1,4 +1,4 @@
-package OOPs.Interfaces;
+package OOPS.Interfaces;
 
 interface Herbivores {
     void eatGrass();

@@ -1,4 +1,4 @@
-package OOPs;
+package OOPS;
 
 public class Destructor {
     /*

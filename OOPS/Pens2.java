@@ -1,4 +1,4 @@
-package OOPs;
+package OOPS;
 // Getters and Setters.
 
 class PenProp {

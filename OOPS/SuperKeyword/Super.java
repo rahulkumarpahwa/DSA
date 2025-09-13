@@ -1,4 +1,4 @@
-package OOPs.SuperKeyword;
+package OOPS.SuperKeyword;
 
 class Animal {
     Animal() {

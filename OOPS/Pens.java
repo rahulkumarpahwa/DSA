@@ -1,4 +1,4 @@
-package OOPs;
+package OOPS;
 
 class PensProp {
     String Color;
