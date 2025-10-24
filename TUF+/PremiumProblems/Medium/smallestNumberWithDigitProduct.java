@@ -25,3 +25,7 @@ class Solution {
         return str;
     }
 }
+
+
+// https://chatgpt.com/share/68fbb8df-9870-8002-9418-b8d867ade10a
+// read this article important.
