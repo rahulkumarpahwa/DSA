@@ -36,3 +36,50 @@ class Solution {
     return sb.toString().trim();
   }
 }
+
+
+// optimal solution: 
+class Solution {
+  public void reverse(StringBuilder sb, int i, int j) {
+    while (i <= j) {
+      char ch = sb.charAt(i);
+      sb.setCharAt(i, sb.charAt(j));
+      sb.setCharAt(j, ch);
+      i++;
+      j--;
+    }
+  }
+
+  public String reverseWords(String s) {
+    // optimal solution:
+    StringBuilder sb = new StringBuilder(s);
+
+    // reverse the string :
+    reverse(sb, 0, sb.length() - 1);
+    // find the single word and shift left and then add space and then reverse:
+    int i = 0, j = 0, n = sb.length();
+    int start, end;
+    // here j is the main cursor
+    while (j < n) {
+      while (j < n && sb.charAt(j) == ' ') j++;
+      if (j == n) break;
+      start = i;
+      // shift left:
+      while (j < n && sb.charAt(j) != ' ') {
+        sb.setCharAt(i, sb.charAt(j));
+        i++;
+        j++;
+      }
+      end = i - 1;
+      reverse(sb, start, end);
+
+      if (i < sb.length()) {
+        sb.setCharAt(i++, ' ');
+      }
+    }
+
+    if (i > 0 && sb.charAt(i - 1) == ' ') i--;
+
+    return sb.substring(0, i); // always note we will send till the i
+  }
+}
