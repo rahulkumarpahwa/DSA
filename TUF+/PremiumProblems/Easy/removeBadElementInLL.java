@@ -47,3 +47,46 @@ class Solution {
         return newHead;
     }
 }
+
+
+/*Definition for Singly Linked List
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode() {
+        val = 0;
+        next = null;
+    }
+
+    ListNode(int data1) {
+        val = data1;
+        next = null;
+    }
+
+    ListNode(int data1, ListNode next1) {
+        val = data1;
+        next = next1;
+    }
+}
+*/
+
+
+class Solution {
+    public ListNode removeBadElements(ListNode head, int val) {
+        // brute Solution 2nd : 
+        ListNode p = new ListNode(-1);
+        p.next = head; // important
+        ListNode start = p;
+        ListNode temp = head;
+        while(temp!= null){
+            if(temp.val == val){
+                start.next = temp.next;
+            } else {
+                start = temp;
+            }
+            temp = temp.next;
+        }
+        return p.next;
+    }
+}
