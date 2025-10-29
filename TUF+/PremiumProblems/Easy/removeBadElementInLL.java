@@ -90,3 +90,45 @@ class Solution {
         return p.next;
     }
 }
+
+//optimal solution:
+/*Definition for Singly Linked List
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode() {
+        val = 0;
+        next = null;
+    }
+
+    ListNode(int data1) {
+        val = data1;
+        next = null;
+    }
+
+    ListNode(int data1, ListNode next1) {
+        val = data1;
+        next = next1;
+    }
+}
+*/
+
+
+class Solution {
+    public ListNode removeBadElements(ListNode head, int val) {
+        ListNode prev = head;
+        ListNode temp = prev;
+        ListNode curr = head;
+        while(curr!=null){
+            if(curr.val == val){
+                prev.next = curr.next;
+            } else {
+                prev = curr;
+            }
+            curr = curr.next;
+        }
+        if(temp.val == val) return temp.next; // when the head value is also the bad number.
+        return temp;
+    }
+}
