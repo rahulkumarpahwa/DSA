@@ -18,3 +18,34 @@ class Solution {
     return new int[] {floor, ceil};
   }
 }
+
+
+class Solution {
+  public int[] getFloorAndCeil(int[] nums, int x) {
+    // optimal :
+    int floor = -1, ceil = -1;
+    int i = 0, j = nums.length - 1;
+    while (i <= j) {
+      int mid = i + (j - i) / 2;
+      if (nums[mid] >= x) {
+        ceil = nums[mid];
+        j = mid - 1;
+      } else {
+        i = mid + 1;
+      }
+    }
+
+    i = 0;
+    j = nums.length - 1;
+    while (i <= j) {
+      int mid = i + (j - i) / 2;
+      if (nums[mid] <= x) {
+        floor = nums[mid];
+        i = mid + 1;
+      } else {
+        j = mid - 1;
+      }
+    }
+    return new int[] {floor, ceil};
+  }
+}
