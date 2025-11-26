@@ -14,3 +14,14 @@ class Solution {
     return -1; // dummy
   }
 }
+
+class Solution {
+    public int singleNonDuplicate(int[] nums) {
+      // brute 2 :
+      int ans = 0;
+      for(int i = 0; i<nums.length; i++){
+        ans ^= nums[i];
+      }
+      return ans;
+    }
+}
